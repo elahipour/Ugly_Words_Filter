@@ -10,18 +10,19 @@
 </head>
 
 <body>
-    <div id="wrapper">
+    <div id="container">
         <div>
-            <input type="text" id="bad" placeholder="Enter the bad word and press the save button to blacklist it"
+            <input type="text" id="bad-word" placeholder="Enter the bad word and press the save button to blacklist it"
                 title="After entering the bad word, hit save to add it to the collection of bad words">
             <button onclick="Save()">Save!</button>
         </div>
         <ul id="badsList"></ul>
-        <textarea type="text" multiple id="text" oninput="checkString(this)" placeholder="Enter your words"
+        <textarea multiple id="text" oninput="checkString(this)" placeholder="Enter your words"
             title="Enter the text and press enter"></textarea>
+            
         <!-- display result -->
-        <div id="container"></div>
-        <!--/display result :)-->
+        <div></div>
+
     </div>
 
 </body>

@@ -3,8 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-#wrapper {
+body{
+    background: linear-gradient(to bottom left,#3b8a97,#e7e7e7);
+    background-attachment: fixed;
+}
+#container {
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -14,7 +17,8 @@
     height: fit-content;
     padding: 15px;
     margin: 100px auto 0 auto;
-    box-shadow: 0px 0px 2px 2px rgba(240, 240, 240, .7);
+    box-shadow: 0px 0px 2px 2px rgba(201, 201, 201, 0.7);
+    background: #fff;
     border-radius: 7px;
     gap: 20px;
     transition: all 3s ease;
@@ -24,12 +28,14 @@ input,textarea,
 button {
     padding: 7px 10px;
     outline: none;
-    border: 1px solid rgba(240, 240, 240, .8);
+    border: 1px solid rgba(203, 203, 203, 0.8);
     border-radius: 4px;
 }
 
 button {
     cursor: pointer;
+    background: #4c6099;
+    color: #fff;
 }
 
 #badsList {
