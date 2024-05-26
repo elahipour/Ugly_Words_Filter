@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+    <title>BadWordFilter</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div>
+            <input type="text" id="bad" placeholder="Enter the bad word and press the save button to blacklist it"
+                title="After entering the bad word, hit save to add it to the collection of bad words">
+            <button onclick="Save()">Save!</button>
+        </div>
+        <ul id="badsList"></ul>
+        <textarea type="text" multiple id="text" oninput="checkString(this)" placeholder="Enter your words"
+            title="Enter the text and press enter"></textarea>
+        <!-- display result -->
+        <div id="container"></div>
+        <!--/display result :)-->
+    </div>
+
+</body>
+<script src="assets/JS/scripts.js"></script>
+
+</html>
