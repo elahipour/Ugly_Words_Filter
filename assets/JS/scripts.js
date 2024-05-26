@@ -29,7 +29,7 @@ const checkString = (e) => {
 
   for (let badWord of bads) {
     for (let i of splited) {
-      if (badWord === i) {
+      if (i.includes(badWord)) {
         badsInText.push(i);
         for (let j = 0; j < i.length; j++) {
           stars += "*";
